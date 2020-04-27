@@ -5,18 +5,20 @@ var oracledb = require("oracledb");
 var NodeGeocoder = require('node-geocoder');
 //var User = require("../models/user");
 
+//Put Google map api key
 var options = {
   provider: 'google',
   httpAdapter: 'https',
-  apiKey: 'AIzaSyAwp-La2f8r1n7_V9tcaB1blAU59sm3Qzo',
+  apiKey: '',
   formatter: null
 };
 var geocoder = NodeGeocoder(options);
 
+//Put Database Authentication
 var dbConfig = {
-    user:     "zezhou",
-    password: "zzz999774",
-    connectString : "oracle.cise.ufl.edu/orcl"
+    user:     "",
+    password: "",
+    connectString : ""
 };
 
 router.get("/", function(req, res){
